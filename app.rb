@@ -19,7 +19,7 @@ get '/say/:number/:phrase' do
   x = 0 
   until x == @number  
   x+=1 
-  "#{@everything}"
+  @everything
   end 
 end 
 end
