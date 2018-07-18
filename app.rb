@@ -15,10 +15,9 @@ end
 get '/say/:number/:phrase' do 
   @number = params[:number].to_i 
   @phrase = params[:phrase]
-  @everything = " "
+  @everything = @phrase
   x = 0 
   until x == @number  
- @everything = @phrase
   x+=1 
   "#{@everything}"
   end 
