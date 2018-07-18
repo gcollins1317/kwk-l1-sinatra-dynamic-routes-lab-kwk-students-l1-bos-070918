@@ -32,8 +32,16 @@ get '/:operation/:number1/:number2' do
   @operation = params[:operation]
   if @operation = "add"
     answer = @number1 + @number2
-    "#{answer}"
   end 
-  if 
+   if @operation = "subtract"
+    answer = @number1 - @number2
+  end
+   if @operation = "multiply"
+    answer = @number1 * @number2
+  end
+   if @operation = "divide"
+    answer = @number1 / @number2
+  end
+  "#{answer}"
 end 
 end
